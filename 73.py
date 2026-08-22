@@ -24,7 +24,7 @@ class Solution:
                     matrix[0][n] = 0
                     matrix[m][n] = 0
 
-        for m in range(1, rows):
+        for n in range(1, columns):
             for n in range(1, columns):
                 if matrix[0][n] == 0 or matrix[m][0] == 0:
                     matrix[m][n] = 0
