@@ -3,7 +3,7 @@ class Solution:
 
         result = 0
         currSum = 0
-        prefixSum = {0: -1}
+        prefixSum = {0: 1}
 
         for num in nums:
             currSum += num
