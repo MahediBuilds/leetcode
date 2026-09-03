@@ -10,7 +10,7 @@ class Solution:
         curr = dummy
         carry = 0
 
-        while l1 and l2:
+        while l1 or l2 or carry:
 
             if l1:
                 val1 = l1.val
@@ -27,8 +27,8 @@ class Solution:
             val = val % 10
             curr.next = ListNode(val)
 
-            l1 = l1.next
-            l2 = l2.next
+            l1 = l1.next if l1 else None
+            l2 = l2.next if l1 else None
             curr = curr.next
 
         return dummy.next
